@@ -40,28 +40,36 @@
 
 <a name="Examples"></a>
 ## Examples of StackML models
-<img src="https://d3l5ba5b56ptip.cloudfront.net/media/image-classify-output.jpg" width="500">
-> Image Classification
 
+*Image Classification*
+
+<img src="https://d3l5ba5b56ptip.cloudfront.net/media/image-classify-output.jpg" width="500">
+
+*YOLO*
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/yolo-output.jpeg" width="500">
-> YOLO
+
+*PoseNet*
 
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/posenet-output.png" width="500">
-> PoseNet
+
+*BodyPix*
 
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/bodypix-output.jpg" width="500">
-> BodyPix
+
+*Face Detection*
 
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/face-detection.jpeg" width="500">
-> Face Detection
+
+*Face Landmark Detection*
 
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/face-landmark-output.png" width="500">
-> Face Landmark Detection
+
+*Face Expression Recognition*
 
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/face-expression-output.png" width="500">
-> Face Expression Recognition
 
-<a name="Getting-Started"/>
+
+<a name="Getting-Started"></a>
 ## Getting Started
 
 #### Access key
@@ -74,7 +82,7 @@ Add the following script tag to your main HTML file to include StackML library.
 <script src="https://stackml.com/library-js/stackml.min.js">
 ```
 
-<a name="How-To-Use"/>
+<a name="How-To-Use"></a>
 ## How to use
 Below is a complete example to use Image classification model on an image using StackML library.
 
@@ -123,11 +131,11 @@ Below is a complete example to use Image classification model on an image using 
 </html>
 ```
 
-<a name="Pre-trained-models"/>
+<a name="Pre-trained-models"></a>
 ## Pre-trained models
 Pre-trained models are machine learning models which are already trained on a large number of dataset & are ready to use.
 
-<a name="Image-Classification"/>
+<a name="Image-Classification"></a>
 ## Image Classification
 Image classification is the simplest & widely used deep learning model. The model can take an image & assign one or more classes from a fixed set of categories (it's trained on). Image classification provided (MobileNet) is pre-trained on 15 million images spreaded into 1000 categories like airplane, dog etc.
 
@@ -154,7 +162,7 @@ Parameters   | Description
 **options** | Optional. Additional option to change model performance & accuracy. Refer below table. Example - {numberOfClasses:3}
 
 
-<a name="YOLO"/>
+<a name="YOLO"></a>
 ## YOLO
 You only look once (YOLO) is an object detection model which helps to identify the location of an object in the image. It will output the coordinates of the location of an object with respect to the image.
 
@@ -173,7 +181,7 @@ yolo.detect(input, callback?);
 yolo.draw(canvas, input, results);
 ```
 
-<a name="PoseNet"/>
+<a name="PoseNet"></a>
 ## PoseNet
 PoseNet is a pose estimation model which detects human postures in images and video, so that one could determine, for example, where someone’s elbow shows up in an image. It can be used to estimate either a single pose or multiple poses.
 
@@ -192,7 +200,7 @@ posenet.detect(input, callback?);
 posenet.draw(canvas, input, results);
 ```
 
-<a name="BodyPix"/>
+<a name="BodyPix"></a>
 ## BodyPix
 BodyPix is a pre-trained model to perform Person Segmentation on an image or video. In other words, BodyPix can classify the pixels of an image into two categories: 1) pixels that represent a person and 2) pixels that represent background.
 
@@ -209,7 +217,7 @@ model.detect(input, callback?);
 model.draw(canvas, input, results);
 ```
 
-<a name="Face-Detection"/>
+<a name="Face-Detection"></a>
 ## Face Detection
 Face Detection model is used to detect human face in an image or video. It can be regarded as a specific case of object-class detection. Face Detection will output coordinates of box locating the human face.
 
@@ -226,7 +234,7 @@ model.detect(input, callback?);
 model.draw(canvas, input, results);
 ```
 
-<a name="Face-Landmark-Detection"/>
+<a name="Face-Landmark-Detection"></a>
 ## Face Landmark Detection 
 Face Landmark Detection also known as Face Feature Detection model detects 68 facial keypoints in an image.
 
@@ -243,7 +251,7 @@ model.detect(input, callback?);
 model.draw(canvas, input, results);
 ```
 
-<a name="Face-Expression-Recognition"/>
+<a name="Face-Expression-Recognition"></a>
 ## Face Expression Recognition
 Face Expression Recognition model detects human face & predicts whether the person is sad happy angry & so on. It will out the prediction in seven categories of expressions ie; neutral, happy, sad, angry, fearful, disgusted & surprised. It will also output coordinates of box locating the human face.
 
@@ -260,11 +268,11 @@ model.detect(input, callback?);
 model.draw(canvas, input, results);
 ```
 
-<a name="User-trained-models"/>
+<a name="User-trained-models"></a>
 ## User trained models
 After you train a machine learning model on your own dataset using StackML platform, use following code to run prediction on it.
 
-<a name="Image-Classification"/>
+<a name="Image-Classification"></a>
 ## Image Classification
 Image classification is the simplest & widely used deep learning model. The model can take an image & assign one or more classes from a fixed set of categories (it's trained on). Image classifier provided (MobileNet) is pre-trained on 15 million images spreaded into 1000 categories like airplane, dog etc.
 
@@ -300,7 +308,7 @@ const model = await stackml.imageClassifier(modelType, callback?, modelPath);
 classifier.predict(input, callback?, options?);
 ```
 
-<a name="Numeric-Classification"/>
+<a name="Numeric-Classification"></a>
 ## Numeric Classification
 Numeric classification is the simplest & widely used deep learning model. The model takes a csv & assign one or more classes from a fixed set of categories (it's trained on).
 
@@ -315,7 +323,7 @@ const model = await stackml.numericClassifier(modelPath, callback?);
 classifier.predict(input, callback?, options?);
 ```
 
-<a name="Numeric-Regression"/>
+<a name="Numeric-Regression"></a>
 ## Numeric Regression
 Numeric regression is the simplest & widely used deep learning model. The model takes an input csv & calculates an output for each row.
 
