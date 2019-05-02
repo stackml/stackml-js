@@ -1,11 +1,11 @@
 # StackML
-**StackML is a simple GUI tool for non-AI people to use machine learning in browser.**
+[StackML](https://stackml.com/) is a simple GUI tool for non-AI people to use machine learning in browser.
 
-**This github repository hosts StackML Javascript library which enables you to use machine learning models in your web app with few lines of code.**
+This github repository hosts StackML Javascript library which enables you to use machine learning models in your web app with few lines of code.
 
-**StackML provides two main functionalities**
-**1) Use pre-trained models**
-**2) Train a model on your own dataset**
+StackML provides two main functionalities
+1) Use pre-trained models
+2) Train a model on your own dataset
 
 
 ### Use pre-trained models
@@ -46,6 +46,7 @@
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/image-classify-output.jpg" width="500">
 
 *YOLO*
+
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/yolo-output.jpeg" width="500">
 
 *PoseNet*
