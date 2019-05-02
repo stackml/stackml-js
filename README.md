@@ -38,7 +38,7 @@
         * [Numeric Regression](#Numeric-Regression)
 
 
-<a name="Examples"/>
+<a name="Examples"></a>
 ## Examples of StackML models
 <img src="https://d3l5ba5b56ptip.cloudfront.net/media/image-classify-output.jpg" width="500">
 > Image Classification
