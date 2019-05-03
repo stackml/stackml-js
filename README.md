@@ -59,7 +59,7 @@ StackML provides two main functionalities
 
 *Face Detection*
 
-<img src="https://d3l5ba5b56ptip.cloudfront.net/media/face-detection.jpeg" width="500">
+<img src="https://d3l5ba5b56ptip.cloudfront.net/media/face-detection-output.jpeg" width="500">
 
 *Face Landmark Detection*
 
